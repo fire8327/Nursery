@@ -44,6 +44,42 @@
             </div>
         </div>
     </div>
+    <div class="flex flex-col gap-7 xl:gap-7">
+        <div class="flex max-lg:flex-col lg:items-center lg:justify-between gap-7">
+            <p class="Goma text-2xl xl:text-3xl lg:w-2/5">Последние <span class="text-[#E9556D]">новости</span> и <span class="text-[#7BA58A]">объявления</span></p>
+            <NuxtLink to="/" class="flex items-center gap-4 text-sm md:text-base xl:text-lg">
+                <span>Перейти ко всем новостям и объявлениями</span>
+                <img src="/images/services/arrow.png" alt="">
+            </NuxtLink>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-7 xl:gap-10">
+            <div class="flex flex-col gap-5">
+                <img src="/images/news/1.png" alt="" class="rounded-[30px] xl:rounded-[40px]">
+                <p class="font-bold text-lg md:text-xl xl:text-2xl text-[#869D8B]">Нам 2 года</p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
+                    <p class="text-sm text-[#B7B7B7]">29.03.2024</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <img src="/images/news/2.png" alt="" class="rounded-[30px] xl:rounded-[40px]">
+                <p class="font-bold text-lg md:text-xl xl:text-2xl text-[#869D8B]">Нам 2 года</p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
+                    <p class="text-sm text-[#B7B7B7]">29.03.2024</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <img src="/images/news/3.png" alt="" class="rounded-[30px] xl:rounded-[40px]">
+                <p class="font-bold text-lg md:text-xl xl:text-2xl text-[#869D8B]">Нам 2 года</p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
+                    <p class="text-sm text-[#B7B7B7]">29.03.2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <FAQ></FAQ>
 </template>
 
 <script setup>
