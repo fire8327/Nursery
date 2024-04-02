@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full overflow-hidden rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
+        <div class="w-full overflow-hidden rounded-[30px] md:rounded-[45px] xl:rounded-[60px] border-2 border-[#D4E4DA]">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab426ac83db4767ddf192988a216929b5ae8a3641f4e35363219cb91b1493f103&amp;source=constructor" width="100%" height="425" frameborder="0"></iframe>
         </div>
     </div>
