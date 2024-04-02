@@ -1,6 +1,30 @@
 <template>
-    <div>
-        123
+    <div class="col-span-full w-full px-[15px] sm:px-[20px]  lg:w-[90%] lg:mx-auto">
+        <div class="w-full bg-[url(/images/hero/bg.png)] px-6 flex flex-col items-center justify-center bg-cover text-center h-[465px] md:h-[660px] xl:[860px] rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
+            <div class="flex flex-col gap-2.5 md:gap-4 xl:gap-6 text-white">
+                <p class="text-4xl md:text-5xl xl:text-6xl Goma">Детский сад номер 348!</p>
+                <p class="text-lg md:text-xl xl:text-2xl font-semibold lg:w-3/5 lg:mx-auto">Мы рады видеть вас на нашем сайте, где вы сможете получить полную информацию о нашем учебном заведении.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center max-lg:flex-col gap-5 md:gap-9 xl:gap-14 -mt-5 md:-mt-10 xl:-mt-14">
+        <div class="flex flex-col gap-7 xl:gap-10 lg:w-[48%]">
+            <p class="Goma text-2xl xl:text-3xl"><span class="text-[#869D8B]">Дорогие родители!</span> Приветствуем вас на нашем сайте детского сада номер 348!</p>
+            <div class="flex flex-col gap-2 text-sm md:text-base xl:text-lg">
+                <p>Мы стремимся создать комфортную и безопасную образовательную среду, где ваш ребенок сможет раскрыть свой потенциал, развить навыки и умения, а также найти настоящих друзей.</p>
+                <p>Благодарим вас за доверие и выбор нашего учебного заведения! Мы будем делать все возможное, чтобы ваш ребенок получил самые лучшие воспоминания и уверенно начал свой жизненный путь.»</p>
+            </div>
+        </div>
+        <img src="/images/hero/welcome.png" alt="" class="lg:w-[52%] rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
+    </div>
+    <div class="flex flex-col gap-7 xl:gap-7">
+        <div class="flex max-lg:flex-col lg:items-center lg:justify-between gap-7">
+            <p class="Goma text-2xl xl:text-3xl lg:w-3/5"><span class="text-[#E9556D]">Дополнительные</span> образовательные услуги</p>
+            <NuxtLink to="/" class="flex items-center gap-4 text-sm md:text-base xl:text-lg">
+                <span>Перейти ко всем услугам</span>
+                <img src="/images/services/arrow.png" alt="">
+            </NuxtLink>
+        </div>
     </div>
 </template>
 
