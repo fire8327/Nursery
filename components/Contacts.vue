@@ -26,33 +26,8 @@
                 </div>
             </div>
         </div>
-        <!-- <ClientOnly>
-            <div class="w-full h-full bg-white overflow-hidden rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
-                <YandexMap :coordinates="[55.726407, 37.399455]" :zoom="17">
-                    <YandexMarker :coordinates="[55.726407, 37.399455]" :marker-id="12345">
-                        <template #component>
-                            <div class="flex flex-col h-fit gap-2">
-                                <p class="font-medium text-lg">Офис</p>
-                                <p>г. Москва, муниципальный округ Можайский вн.тер.г., ул. Горбунова, д. 2, стр. 3, помещение 55/3</p>
-                            </div>
-                        </template>
-                    </YandexMarker>
-                </YandexMap>
-            </div>
-        </ClientOnly> -->
+        <div class="w-full overflow-hidden rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab426ac83db4767ddf192988a216929b5ae8a3641f4e35363219cb91b1493f103&amp;source=constructor" width="100%" height="425" frameborder="0"></iframe>
+        </div>
     </div>
 </template>
-
-<script setup>
-    /* import { yandexMap, yandexMarker } from 'vue-yandex-maps' */
-</script>
-
-<!-- <style>
-    .yandex-container {
-        height: 400px;
-    }
-    .yandex-balloon {
-        height: 100px;
-        width: 275px;
-    }
-</style> -->
