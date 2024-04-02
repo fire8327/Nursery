@@ -19,7 +19,7 @@
     </div>
     <div class="flex flex-col gap-7 xl:gap-7">
         <div class="flex max-lg:flex-col lg:items-center lg:justify-between gap-7">
-            <p class="Goma text-2xl xl:text-3xl lg:w-3/5"><span class="text-[#E9556D]">Дополнительные</span> образовательные услуги</p>
+            <p class="Goma text-2xl xl:text-3xl lg:w-3/5 break-words"><span class="text-[#E9556D]">Дополнительные</span> образовательные услуги</p>
             <NuxtLink to="/" class="flex items-center gap-4 text-sm md:text-base xl:text-lg">
                 <span>Перейти ко всем услугам</span>
                 <img src="/images/services/arrow.png" alt="">
@@ -86,6 +86,7 @@
         </div>
     </div>
     <Feedback></Feedback>
+    <Contacts></Contacts>
 </template>
 
 <script setup>
