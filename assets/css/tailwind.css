@@ -9,7 +9,7 @@
         
     :root{
         /* максимальная ширина контента */
-        @apply [--widthContent:1380px]
+        @apply [--widthContent:1340px]
         /* Растояние от границы брузера по бокам */
         [--widthContentMargin:15px] sm:[--widthContentMargin:20px] xl:[--widthContentMargin:30px]
     }    
@@ -33,4 +33,13 @@
     .container{        
         @apply max-w-[var(--widthContent)]
     } 
+}
+
+@font-face {
+    font-family: 'Goma';
+    src: url('/fonts/Goma.woff') format('woff');
+    font-weight: 400;
+}
+.Goma {
+    font-family: 'Goma', sans-serif;
 }
