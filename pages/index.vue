@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-full w-full px-[15px] sm:px-[20px]  lg:w-[90%] lg:mx-auto">
+    <div class="col-span-full w-full px-[15px] sm:px-[20px] lg:w-[90%] lg:mx-auto">
         <div class="w-full bg-[url(/images/hero/bg.png)] px-6 flex flex-col items-center justify-center bg-cover text-center h-[465px] md:h-[660px] xl:[860px] rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
             <div class="flex flex-col gap-2.5 md:gap-4 xl:gap-6 text-white">
                 <p class="text-4xl md:text-5xl xl:text-6xl Goma">Детский сад номер 348!</p>
