@@ -32,7 +32,7 @@
                     <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
                     <button class="bg-white text-[#E9556D] text-lg font-bold py-4 text-center max-md:w-full md:px-14 rounded-[15px] xl:rounded-[20px] lg:mt-auto">Узнать подробнее</button>
                 </div>
-                <img src="/images/services/1.png" alt="" class="rounded-[15px]  md:rounded-[25px] xl:rounded-[40px] lg:w-[35%] max-lg:aspect-video max-lg:object-cover max-lg:object-center">
+                <img src="/images/services/1.png" alt="" class="rounded-[15px] md:rounded-[25px] xl:rounded-[40px] lg:w-[35%] max-lg:aspect-video max-lg:object-cover max-lg:object-center">
             </div>
             <div class="flex max-lg:flex-col gap-7 px-5 md:px-7 xl:px-9 py-10 lg:py-9 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#D4E4DA]">
                 <div class="flex flex-col gap-7 xl:gap-8 lg:py-10 xl:py-14 lg:w-[65%] lg:grow">
@@ -40,7 +40,7 @@
                     <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
                     <button class="bg-white text-[#7BA58A] text-lg font-bold py-4 text-center max-md:w-full md:px-14 rounded-[15px] xl:rounded-[20px] lg:mt-auto">Узнать подробнее</button>
                 </div>
-                <img src="/images/services/2.png" alt="" class="rounded-[15px]  md:rounded-[25px] xl:rounded-[40px] lg:w-[35%] max-lg:aspect-video max-lg:object-cover max-lg:object-center">
+                <img src="/images/services/2.png" alt="" class="rounded-[15px] md:rounded-[25px] xl:rounded-[40px] lg:w-[35%] max-lg:aspect-video max-lg:object-cover max-lg:object-center">
             </div>
         </div>
     </div>
@@ -80,6 +80,7 @@
         </div>
     </div>
     <FAQ></FAQ>
+    <Feedback></Feedback>
 </template>
 
 <script setup>

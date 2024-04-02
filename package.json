@@ -10,12 +10,18 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@formkit/icons": "^1.6.1",
+    "@formkit/themes": "^1.6.1",
     "nuxt": "^3.11.1",
-    "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@formkit/nuxt": "^1.6.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.11.4"
+  },
+  "overrides": {
+    "unocss": "0.58.6",
+    "vue": "latest"
   }
 }
