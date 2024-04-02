@@ -5,7 +5,7 @@
             <p class="text-lg">Оставьте заявку и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
         </div>
         <img src="/images/feedback/main.png" alt="" class="rounded-[30px] lg:w-2/5">
-        <FormKit type="form" form-class="flex flex-col gap-7" :actions="false" messages-class="text-[#E9556D] Goma text-xs mt-2">
+        <FormKit type="form" form-class="flex flex-col gap-7" :actions="false">
             <div class="flex flex-col gap-5 max-lg:hidden">
                 <p class="Goma text-[#869D8B] text-2xl">Узнать больше о наших садах</p>
                 <p class="text-lg">Оставьте заявку и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>

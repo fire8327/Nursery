@@ -43,3 +43,7 @@
 .Goma {
     font-family: 'Goma', sans-serif;
 }
+
+.formkit-form > .formkit-messages {
+    display: none;
+}
