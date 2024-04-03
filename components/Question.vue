@@ -9,7 +9,10 @@
 </template>
 
 <script setup>
+    /* показ вопроса */
     const isQuestionShow = ref(false)
+
+    /* пропсы для подгрузки данных */
     const props = defineProps({
         question: String,
         answer: String

@@ -19,6 +19,7 @@
 </template>
 
 <script setup>
+    /* получение данных из БД */
     const route = useRoute()
     const supabase = useSupabaseClient() 
     const { data:card, error:errorCard } = await supabase.from('news').select('*').eq('id',`${route.params.id}`)

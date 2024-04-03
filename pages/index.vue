@@ -67,6 +67,7 @@
 </template>
 
 <script setup>
+    /* список вопросов */
     const FAQs = [
         {
             question: "Какие игры и игрушки наиболее подходят для детей?",
@@ -94,6 +95,7 @@
         }
     ]
 
+    /* получение данных из БД */
     const supabase = useSupabaseClient() 
     const { data:cards, error:errorCards } = await supabase.from('news').select('*').order('id', { ascending: true })
 </script>

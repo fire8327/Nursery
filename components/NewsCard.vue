@@ -13,6 +13,7 @@
 </template>
 
 <script setup>
+    /* пропсы для подгрузки данных */
     const props = defineProps({
         id: String,
         type: String,

@@ -47,7 +47,10 @@
 </template>
 
 <script setup>
+    /* открытие мобильного меню */
     const isMenuShow = ref(false)
+
+    /* открытие формы обратной связи */
     const isFormShow = ref(false)
 </script>
 

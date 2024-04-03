@@ -29,7 +29,7 @@
     <div class="flex flex-col gap-7 xl:gap-10 -mt-5 md:-mt-10 xl:-mt-14">
         <p class="Goma text-2xl xl:text-3xl text-[#869D8B]">объявления</p>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-5">
-            <button @click="filterGroup(n)" class="rounded-[20px] py-4 w-full text-center text-lg md:text-xl xl:text-2xl text-[#869D8B] border border-[#869D8B]" v-for="n in 12">Группа {{ n }}</button>
+            <button ref="buttons" @click="filterGroup(n)" class="rounded-[20px] py-4 w-full text-center text-lg md:text-xl xl:text-2xl text-[#869D8B] border border-[#869D8B] groupButton" v-for="n in 12">Группа {{ n }}</button>
         </div>
         <!-- добавление данных в БД -->
         <!-- <button class="" @click="addDB">Добавить в бд</button> -->
@@ -51,12 +51,25 @@
         return el.group == 1
     })
 
-    /* фильтрация по группам */
+    /* фильтрация по группам и смена стилей кнопок */
+
+    /* первоначальная смена стилей */
+    const buttons = ref()
+    onMounted(()=>{
+        buttons.value[0].classList.add("activeGroupButton")
+    })
     const filterGroup = (number) => {
+        /* фильтрация */
         announce.value = announcements
         announce.value = announcements.filter(el => {
             return el.group == number
         })
+
+        /* смена стилей */
+        buttons.value.forEach(el => {
+            el.classList.remove("activeGroupButton")
+        })
+        buttons.value[number-1].classList.add("activeGroupButton")
     }
 
     /* добавление данных в БД */
@@ -78,3 +91,10 @@
         }   
     } */
 </script>
+
+<style>
+    .activeGroupButton {
+        background: #869D8B;
+        color: white;
+    }
+</style>
