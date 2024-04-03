@@ -1,6 +1,6 @@
 <template>
     <div class="col-span-full w-full max-sm:px-[15px] max-lg:px-[20px] lg:w-[90%] lg:mx-auto">
-        <div class="w-full flex px-4 md:px-16 2xl:px-[194px] relative text-white bg-[url(/images/news/bg-mobile.png)] lg:bg-[url(/images/news/bg-desktop.png)] py-10 bg-cover lg:bg-right max-lg:text-center min-h-[205px] md:min-h-[375px] xl:min-h-[560px] rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
+        <div class="w-full flex px-5 md:px-16 2xl:px-[194px] relative text-white bg-[url(/images/news/bg-mobile.png)] lg:bg-[url(/images/news/bg-desktop.png)] py-10 bg-cover lg:bg-right max-lg:text-center min-h-[205px] md:min-h-[375px] xl:min-h-[560px] rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
             <div class="flex flex-col w-full h-full gap-5 z-[1] max-lg:self-center max-lg:items-center relative">
                 <div class="flex items-center gap-1">
                     <NuxtLink to="/">Главная</NuxtLink>
@@ -23,7 +23,15 @@
     <div class="flex flex-col gap-7 xl:gap-10 -mt-5 md:-mt-10 xl:-mt-14">
         <p class="Goma text-2xl xl:text-3xl text-[#E9556D]">Новости</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 xl:gap-10">
-            <NewsCard v-for="tiding in tidingss" v-bind="tiding"></NewsCard>
+            <NewsCard v-for="tiding in tidings" v-bind="tiding"></NewsCard>
+        </div>
+    </div>
+    <div class="col-span-full w-full max-sm:px-[15px] max-lg:px-[20px] lg:w-[90%] lg:mx-auto">
+        <div class="w-full flex px-5 md:px-16 2xl:px-[194px] relative text-white bg-[url(/images/news/bg-mobile2.png)] md:bg-[url(/images/news/bg-desktop2.png)] max-lg:bg-right py-10 bg-cover min-h-[164px] rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
+            <p class="text-lg">
+                Не забывайте заглядывать в раздел объявлений группы вашего ребенка регулярно, чтобы быть в курсе всех новостей. Так вы ничего не упустите и сможете более эффективно планировать свое время и время своего ребенка.
+                Благодарим вас за внимание и активное участие в жизни нашего детского садика. Раздел объявлений всегда ждет вас с самыми свежими и важными новостями!»
+            </p>
         </div>
     </div>
     <div class="flex flex-col gap-7 xl:gap-10 -mt-5 md:-mt-10 xl:-mt-14">
