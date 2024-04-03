@@ -31,6 +31,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-5">
             <button @click="filterGroup(n)" class="rounded-[20px] py-4 w-full text-center text-lg md:text-xl xl:text-2xl text-[#869D8B] border border-[#869D8B]" v-for="n in 12">Группа {{ n }}</button>
         </div>
+        <!-- добавление данных в БД -->
         <!-- <button class="" @click="addDB">Добавить в бд</button> -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 xl:gap-10">
             <NewsCard v-for="announcement in announce" v-bind="announcement"></NewsCard>
@@ -39,20 +40,26 @@
 </template>
 
 <script setup>
+    /* получение данных из БД */
     const supabase = useSupabaseClient() 
     const { data:tidings, error:errorTidings } = await supabase.from('news').select('*').eq('type','news')
     const { data:announcements, error:errorAnnouncements } = await supabase.from('news').select('*').eq('type','announcement')
+
+    /* первоначальная фильтрация данных */
     const announce = ref()
     announce.value = announcements.filter(el => {
         return el.group == 1
     })
 
+    /* фильтрация по группам */
     const filterGroup = (number) => {
         announce.value = announcements
         announce.value = announcements.filter(el => {
             return el.group == number
         })
     }
+
+    /* добавление данных в БД */
     /* const minDate = 1700162951394
     const maxDate = 1712162930098
     const addDB = async () => {     
