@@ -53,7 +53,7 @@
             </NuxtLink>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-7 xl:gap-10">
-            <NewsCard v-for="card in cards" v-bind="card"></NewsCard>
+            <NewsCard v-for="card in cards.reverse().slice(0,3)" v-bind="card"></NewsCard>
         </div>
     </div>
     <div class="flex flex-col gap-7 xl:gap-7">
@@ -94,24 +94,6 @@
         }
     ]
 
-    const cards = [
-        {
-            img: "/images/news/1.png",
-            title: "Нам 2 года",
-            desc: "8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.",
-            date: "29.03.2024"
-        },
-        {
-            img: "/images/news/2.png",
-            title: "Нам 2 года",
-            desc: "8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.",
-            date: "29.03.2024"
-        },
-        {
-            img: "/images/news/3.png",
-            title: "Нам 2 года",
-            desc: "8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.",
-            date: "29.03.2024"
-        },
-    ]
+    const supabase = useSupabaseClient() 
+    const { data:cards, error:errorCards } = await supabase.from('news').select('*').order('id', { ascending: true })
 </script>

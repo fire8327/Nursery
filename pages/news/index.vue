@@ -24,36 +24,11 @@
         <p class="Goma text-2xl xl:text-3xl text-[#E9556D]">Новости</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 xl:gap-10">
             <NewsCard v-for="card in cards" v-bind="card"></NewsCard>
-            <NewsCard v-for="card in cards" v-bind="card"></NewsCard>
         </div>
     </div>
 </template>
 
 <script setup>
-    const cards = [
-        {
-            img: "/images/news/1.png",
-            title: "Нам 2 года",
-            desc: "8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.",
-            date: "29.03.2024",
-            id: "1",
-            type: "news"
-        },
-        {
-            img: "/images/news/2.png",
-            title: "Нам 2 года",
-            desc: "8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.",
-            date: "29.03.2024",
-            id: "2",
-            type: "announcement"
-        },
-        {
-            img: "/images/news/3.png",
-            title: "Нам 2 года",
-            desc: "8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.",
-            date: "29.03.2024",
-            id: "3",
-            type: "news"
-        },
-    ]
+    const supabase = useSupabaseClient() 
+    const { data:cards, error:errorCards } = await supabase.from('news').select('*')
 </script>
