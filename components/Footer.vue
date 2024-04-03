@@ -7,10 +7,11 @@
             </NuxtLink>
             <div class="flex items-center max-lg:flex-col gap-2 md:gap-6 xl:gap-9 w-fit font-Nunito text-sm md:text-base xl:text-lg">
                 <NuxtLink to="/">Главная</NuxtLink>
-                <NuxtLink to="/">Объявления и Новости</NuxtLink>
+                <NuxtLink to="/news">Объявления и Новости</NuxtLink>
                 <NuxtLink to="/">Доп. услуги</NuxtLink>
                 <NuxtLink to="/">Питание</NuxtLink>
                 <NuxtLink to="/">Наши успехи</NuxtLink>  
+                <NuxtLink to="/">Админ панель</NuxtLink>  
             </div>
             <div class="w-full h-px bg-[#EEF0F3]"></div>
             <p class="text-sm md:text-lg xl:text-xl font-medium text-center">© 2024. Детский сад №348 Советского района Волгограда</p>
