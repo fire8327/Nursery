@@ -23,12 +23,51 @@
     <div class="flex flex-col gap-7 xl:gap-10 -mt-5 md:-mt-10 xl:-mt-14">
         <p class="Goma text-2xl xl:text-3xl text-[#E9556D]">Новости</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 xl:gap-10">
-            <NewsCard v-for="card in cards" v-bind="card"></NewsCard>
+            <NewsCard v-for="tiding in tidingss" v-bind="tiding"></NewsCard>
+        </div>
+    </div>
+    <div class="flex flex-col gap-7 xl:gap-10 -mt-5 md:-mt-10 xl:-mt-14">
+        <p class="Goma text-2xl xl:text-3xl text-[#869D8B]">объявления</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-5">
+            <button @click="filterGroup(n)" class="rounded-[20px] py-4 w-full text-center text-lg md:text-xl xl:text-2xl text-[#869D8B] border border-[#869D8B]" v-for="n in 12">Группа {{ n }}</button>
+        </div>
+        <!-- <button class="" @click="addDB">Добавить в бд</button> -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 xl:gap-10">
+            <NewsCard v-for="announcement in announce" v-bind="announcement"></NewsCard>
         </div>
     </div>
 </template>
 
 <script setup>
     const supabase = useSupabaseClient() 
-    const { data:cards, error:errorCards } = await supabase.from('news').select('*')
+    const { data:tidings, error:errorTidings } = await supabase.from('news').select('*').eq('type','news')
+    const { data:announcements, error:errorAnnouncements } = await supabase.from('news').select('*').eq('type','announcement')
+    const announce = ref()
+    announce.value = announcements.filter(el => {
+        return el.group == 1
+    })
+
+    const filterGroup = (number) => {
+        announce.value = announcements
+        announce.value = announcements.filter(el => {
+            return el.group == number
+        })
+    }
+    /* const minDate = 1700162951394
+    const maxDate = 1712162930098
+    const addDB = async () => {     
+        for (let index = 1; index < 7; index++) { 
+            const { data, error } = await supabase
+            .from('news')
+            .insert([
+                {
+                    date: `${new Date(Math.floor(Math.random() * (maxDate - minDate) + minDate)).toLocaleDateString()}`,
+                    type: 'announcement', 
+                    title: 'Важное сообщение!', 
+                    desc: 'Пожалуйста, не отправляйте больных детей в садик. Это способствует сохранению общего здоровья детей и предотвращению распространения инфекций.', 
+                    group: `${Math.floor(Math.random() * (12 - 1) + 1)}`},
+            ])
+            .select()   
+        }   
+    } */
 </script>
