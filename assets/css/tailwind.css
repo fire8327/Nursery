@@ -47,3 +47,7 @@
 .formkit-form > .formkit-messages {
     display: none;
 }
+
+.swiper-pagination-bullet-active {
+    background: #7BA58A !important;
+}

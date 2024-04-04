@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "@formkit/nuxt",
-    "@nuxtjs/supabase"
+    "@nuxtjs/supabase",
+    "nuxt-swiper"
   ],
   googleFonts: {
     families: {
