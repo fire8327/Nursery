@@ -39,6 +39,51 @@
                 </div>
             </div>
         </div>
+        <div class="flex flex-col gap-10 px-5 md:px-10 xl:px-16 py-10 md:py-12 xl:py-16 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#D4E4DA]">
+            <p class="text-2xl md:text-3xl xl:text-4xl Goma px-5 md:px-8 xl:px-10">Пример одного дня</p>
+            <div class="flex flex-col gap-14 md:gap-20 xl:gap-24 w-full">
+                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                    <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Завтрак</p>
+                    <div class="flex flex-col gap-7 xl:gap-9">
+                        <div class="w-full h-px bg-[#869D8B]"></div>
+                        <div class="flex items-center justify-between">
+                            <p>Хлеб</p>
+                            <p>20г</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                    <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Завтрак 2</p>
+                    <div class="flex flex-col gap-7 xl:gap-9">
+                        <div class="w-full h-px bg-[#869D8B]"></div>
+                        <div class="flex items-center justify-between">
+                            <p>Хлеб</p>
+                            <p>20г</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                    <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Обед</p>
+                    <div class="flex flex-col gap-7 xl:gap-9">
+                        <div class="w-full h-px bg-[#869D8B]"></div>
+                        <div class="flex items-center justify-between">
+                            <p>Хлеб</p>
+                            <p>20г</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                    <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Уплотненный полдник</p>
+                    <div class="flex flex-col gap-7 xl:gap-9">
+                        <div class="w-full h-px bg-[#869D8B]"></div>
+                        <div class="flex items-center justify-between">
+                            <p>Хлеб</p>
+                            <p>20г</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
