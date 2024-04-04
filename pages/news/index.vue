@@ -34,7 +34,7 @@
             </p>
         </div>
     </div>
-    <div class="flex flex-col gap-7 xl:gap-10 -mt-5 md:-mt-10 xl:-mt-14">
+    <div class="flex flex-col gap-7 xl:gap-10">
         <p class="Goma text-2xl xl:text-3xl text-[#869D8B]">объявления</p>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-5">
             <button ref="buttons" @click="filterGroup(n)" class="rounded-[20px] py-4 w-full text-center text-lg md:text-xl xl:text-2xl text-[#869D8B] border border-[#869D8B] groupButton" v-for="n in 12">Группа {{ n }}</button>

@@ -9,7 +9,7 @@
                 <NuxtLink to="/">Главная</NuxtLink>
                 <NuxtLink to="/news">Объявления и Новости</NuxtLink>
                 <NuxtLink to="/services">Доп. услуги</NuxtLink>
-                <NuxtLink to="/">Питание</NuxtLink>
+                <NuxtLink to="/nutrition">Питание</NuxtLink>
                 <NuxtLink to="/">Наши успехи</NuxtLink>  
                 <NuxtLink to="/">Админ панель</NuxtLink>  
             </div>
