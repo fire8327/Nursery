@@ -9,7 +9,7 @@
                 <nav class="flex items-center gap-3 xl:gap-10 text-lg max-xl:bg-white max-xl:flex-col max-xl:absolute max-xl:left-0 max-xl:w-full max-xl:pb-5 max-xl:rounded-b-[20px] max-xl:z-[4] max-xl:transition-all max-xl:duration-500" :class="isMenuShow ? 'max-xl:top-full' : 'max-xl:top-0 max-xl:-translate-y-full'">
                     <NuxtLink to="/" class="max-xl:w-full max-xl:px-5 headerLink">Главная</NuxtLink>
                     <NuxtLink to="/news" class="max-xl:w-full max-xl:px-5 headerLink">Объявления и Новости</NuxtLink>
-                    <NuxtLink to="/a" class="max-xl:w-full max-xl:px-5 headerLink">Доп. услуги</NuxtLink>
+                    <NuxtLink to="/services" class="max-xl:w-full max-xl:px-5 headerLink">Доп. услуги</NuxtLink>
                     <NuxtLink to="/a" class="max-xl:w-full max-xl:px-5 headerLink">Питание</NuxtLink>
                     <NuxtLink to="/a" class="max-xl:w-full max-xl:px-5 headerLink">Наши успехи</NuxtLink>
                 </nav>

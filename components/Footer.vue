@@ -8,7 +8,7 @@
             <div class="flex items-center max-lg:flex-col gap-2 md:gap-6 xl:gap-9 w-fit font-Nunito text-sm md:text-base xl:text-lg">
                 <NuxtLink to="/">Главная</NuxtLink>
                 <NuxtLink to="/news">Объявления и Новости</NuxtLink>
-                <NuxtLink to="/">Доп. услуги</NuxtLink>
+                <NuxtLink to="/services">Доп. услуги</NuxtLink>
                 <NuxtLink to="/">Питание</NuxtLink>
                 <NuxtLink to="/">Наши успехи</NuxtLink>  
                 <NuxtLink to="/">Админ панель</NuxtLink>  

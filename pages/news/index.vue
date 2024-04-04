@@ -2,10 +2,10 @@
     <div class="col-span-full w-full max-sm:px-[15px] max-lg:px-[20px] lg:w-[90%] lg:mx-auto">
         <div class="w-full flex px-5 md:px-16 2xl:px-[194px] relative text-white bg-[url(/images/news/bg-mobile.png)] lg:bg-[url(/images/news/bg-desktop.png)] py-10 bg-cover lg:bg-right max-lg:text-center min-h-[205px] md:min-h-[375px] xl:min-h-[560px] rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
             <div class="flex flex-col w-full h-full gap-5 z-[1] max-lg:self-center max-lg:items-center relative">
-                <div class="flex items-center gap-1">
+                <div>
                     <NuxtLink to="/">Главная</NuxtLink>
-                    <p>/</p>
-                    <p>Объявления и Новости</p>
+                    /
+                    Объявления и Новости
                 </div>
                 <p class="text-4xl md:text-5xl xl:text-6xl Goma max-w-[690px]">Объявления и новости</p>           
                 <p class="max-lg:hidden text-lg max-w-[907px]">Дорогие родители! Мы рады приветствовать вас на странице объявлений нашего детского садика. Здесь вы можете найти все самые актуальные и важные новости, касающиеся группы вашего ребенка. Мы призываем вас посещать этот раздел регулярно и следить за обновлениями.</p>
