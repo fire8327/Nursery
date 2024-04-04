@@ -30,23 +30,8 @@
                 'slidesPerView': 3
             }
         }" class="w-full">
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
-            <img src="/images/services/service1.jpg" alt="">
-        </SwiperSlide>
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
-            <img src="/images/services/service2.jpg" alt="">
-        </SwiperSlide>
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
-            <img src="/images/services/service3.jpg" alt="">
-        </SwiperSlide>
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
-            <img src="/images/services/service4.jpg" alt="">
-        </SwiperSlide>
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
-            <img src="/images/services/service5.jpg" alt="">
-        </SwiperSlide>
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden">
-            <img src="/images/services/service6.jpg" alt="">
+        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden" v-for="slide in slides">
+            <img :src="slide.img" alt="">
         </SwiperSlide>
     </Swiper>
     <div class="flex flex-col gap-7 xl:gap-7">
@@ -99,35 +84,13 @@
 </template>
 
 <script setup>
-    /* список вопросов */
-    const FAQs = [
-        {
-            question: "Какие игры и игрушки наиболее подходят для детей?",
-            answer: "Рекомендуется выбирать игры, которые способствуют развитию моторики, координации и логического мышления. Это могут быть конструкторы, головоломки, игры с пазлами, мягкие игрушки для развития тактильных ощущений. Также важно предоставить ребенку доступ к книгам и рисованию, чтобы развивать его творческие навыки."
-        },
-        {
-            question: "Как организовать у малыша режим дня?",
-            answer: "Для этого возраста важно установить стабильный режим дня, который включает время для игр, еды, сна и обучения. Рекомендуется составить расписание, чтобы дети знали, что ожидать. Важно также предоставлять им время на самостоятельные игры и развитие своих интересов."
-        },
-        {
-            question: "Как помочь детям развивать речь?",
-            answer: "Разговаривайте с ребенком много, задавайте ему вопросы и поддерживайте диалог. Читайте книги вместе, рассказывайте сказки и показывайте картинки. Важно также играть в слова и учить новые слова в повседневной жизни. Позволяйте ребенку выражать свои мысли и идеи, а также активно слушайте его."
-        },
-        {
-            question: "Как развивать социальные навыки у ребенка?",
-            answer: "Предоставляйте ребенку возможность играть с другими детьми, например, в детском саду или на игровой площадке. Учите его правилам взаимодействия, как делиться игрушками и уважать пространство других. Учите своего ребенка эмоциям и эмпатии, помогайте ему понимать и выражать свои чувства, а также проявлять заботу о других."
-        },
-        {
-            question: "Как развивать физическую активность у детей?",
-            answer: "Предоставьте ребенку возможность заниматься спортом и физическими упражнениями, такими как прыжки, бег, мячи, велосипеды и игры на свежем воздухе. Поощряйте его активность и учите правилам безопасности во время игр."
-        },
-        {
-            question: "Как развивать самостоятельность у ребенка?",
-            answer: "Учите ребенка самому одеваться, мыться и одевать игрушки или куклы. Предоставляйте ему возможность делать выборы и принимать небольшие решения самостоятельно. Также поощряйте его при самостоятельном выполнении задач и давайте положительные оценки."
-        }
-    ]
-
     /* получение данных из БД */
     const supabase = useSupabaseClient() 
     const { data:cards, error:errorCards } = await supabase.from('news').select('*').order('id', { ascending: true })
+
+    /* список вопросов */
+    const { data:FAQs, error:errorFAQs } = await supabase.from('FAQ').select('*').eq('page', '1')    
+
+    /* фотографии для слайдера */
+    const { data:slides, error:errorЫlides } = await supabase.from('mainSlider').select('*')
 </script>
