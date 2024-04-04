@@ -15,7 +15,7 @@
 <script setup>
     /* пропсы для подгрузки данных */
     const props = defineProps({
-        id: String,
+        id: Number,
         type: String,
         img: String,
         title: String,

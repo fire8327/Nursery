@@ -41,7 +41,7 @@
                 </div>
                 <FormKit type="checkbox" name="Согласие" validation="accepted" messages-class="text-[#E9556D] Goma text-xs mt-2" wrapper-class="flex items-center gap-4 cursor-pointer" input-class="hidden checkboxInput" icon-class="w-3 h-3 flex opacity-0" decorator-class="bg-white p-1 shrink-0 rounded-[5px] flex items-center justify-center w-5 h-5 checkboxIcon" label="Согласие на обработку персональных данных"/>                
                 <FormKit type="submit" input-class="uppercase text-lg text-white bg-[#869D8B] rounded-[20px] w-full py-5 font-bold">Оставить заявку</FormKit>
-        </FormKit>
+            </FormKit>
         </div>
     </header>
 </template>

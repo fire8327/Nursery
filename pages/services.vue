@@ -44,7 +44,7 @@
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
                     <span class="font-semibold">Стоимость:</span> 250₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#B89574] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#B89574] text-white" @click="isServicesFormShow = true, selectService('Детская гимнастика')">Записаться</button>
             </div>
         </div>
         <div class="flex flex-col bg-[#D4E4DA] gap-7 md:gap-10 xl:gap-12 py-10 xl:py-12 px-5 md:px-14 xl:px-20 rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
@@ -76,7 +76,7 @@
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
                     <span class="font-semibold">Стоимость:</span> 300₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#869D8B] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#869D8B] text-white" @click="isServicesFormShow = true, selectService('Йога')">Записаться</button>
             </div>
         </div>
         <div class="flex flex-col bg-[#FED3DA] gap-7 md:gap-10 xl:gap-12 py-10 xl:py-12 px-5 md:px-14 xl:px-20 rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
@@ -108,7 +108,7 @@
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
                     <span class="font-semibold">Стоимость:</span> 300₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#E9556D] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#E9556D] text-white" @click="isServicesFormShow = true, selectService('Математика')">Записаться</button>
             </div>
         </div>
         <div class="flex flex-col bg-[#F2E4D7] gap-7 md:gap-10 xl:gap-12 py-10 xl:py-12 px-5 md:px-14 xl:px-20 rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
@@ -140,7 +140,7 @@
                     <span class="font-semibold">Время занятий:</span> 45 минут. <br>
                     <span class="font-semibold">Стоимость:</span> 200₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#B89574] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#B89574] text-white" @click="isServicesFormShow = true, selectService('Развитие речи')">Записаться</button>
             </div>
         </div>
         <div class="flex flex-col bg-[#D4E4DA] gap-7 md:gap-10 xl:gap-12 py-10 xl:py-12 px-5 md:px-14 xl:px-20 rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
@@ -172,7 +172,7 @@
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
                     <span class="font-semibold">Стоимость:</span> 250₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#869D8B] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#869D8B] text-white" @click="isServicesFormShow = true, selectService('Рисование')">Записаться</button>
             </div>
         </div>
         <div class="flex flex-col bg-[#FED3DA] gap-7 md:gap-10 xl:gap-12 py-10 xl:py-12 px-5 md:px-14 xl:px-20 rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
@@ -204,7 +204,7 @@
                     <span class="font-semibold">Время занятий:</span> 45 минут. <br>
                     <span class="font-semibold">Стоимость:</span> 300₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#E9556D] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#E9556D] text-white" @click="isServicesFormShow = true, selectService('Логопед')">Записаться</button>
             </div>
         </div>
         <div class="flex flex-col bg-[#F2E4D7] gap-7 md:gap-10 xl:gap-12 py-10 xl:py-12 px-5 md:px-14 xl:px-20 rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
@@ -236,7 +236,7 @@
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
                     <span class="font-semibold">Стоимость:</span> 400₽ одно занятие.
                 </p>
-                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#B89574] text-white">Записаться</button>
+                <button class="w-full py-4 md:w-[275px] rounded-[20px] bg-[#B89574] text-white" @click="isServicesFormShow = true, selectService('Психолог')">Записаться</button>
             </div>
         </div>
     </div>
@@ -248,11 +248,26 @@
     </div>
     <Feedback></Feedback>
     <Contacts></Contacts>
+    <div class="fixed w-full h-screen bg-black/30 top-0 left-0 z-[5] flex items-center justify-center px-[15px] sm:px-[20px]" :class="{'hidden' : !isServicesFormShow}">
+        <FormKit type="form" form-class="flex flex-col gap-5 w-full max-w-[430px] px-5 py-7 relative bg-[#D4E4DA] z-[1] rounded-[30px]" :actions="false">
+            <button type="button" @click="isServicesFormShow = false" class="absolute top-7 right-5 xl:right-7">
+                <img src="/images/feedback/close.png" alt="" class="w-5 h-5">
+            </button>
+            <p class="Goma text-[#869D8B] text-lg xl:text-xl text-center mt-10">Оставьте заявку и мы свяжемся с вами</p>
+            <div class="flex flex-col gap-4 mt-2.5">
+                <FormKit v-model="servicesForm.name" type="text" name="Ваше имя" validation="required|length:2|alpha" messages-class="text-[#E9556D] Goma text-xs mt-2" input-class="p-5 bg-white rounded-[20px] w-full" placeholder="Ваше имя"/>
+                <FormKit v-model="servicesForm.phone" type="text" name="Телефон" validation="required|length:11" messages-class="text-[#E9556D] Goma text-xs mt-2" input-class="p-5 bg-white rounded-[20px] w-full" placeholder="Телефон"/>
+                <FormKit v-model="servicesForm.email" type="text" name="Email" validation="required|email" messages-class="text-[#E9556D] Goma text-xs mt-2" input-class="p-5 bg-white rounded-[20px] w-full" placeholder="Email"/>
+                <FormKit v-model="servicesForm.service" type="select" name="Выбранная услуга" :options="['Детская гимнастика','Йога','Математика','Развитие речи','Рисование','Логопед','Психолог']" validation="required" messages-class="text-[#E9556D] Goma text-xs mt-2" input-class="p-5 bg-white rounded-[20px] w-full" placeholder="Выбранная услуга"/>
+            </div>
+            <FormKit type="checkbox" name="Согласие" validation="accepted" messages-class="text-[#E9556D] Goma text-xs mt-2" wrapper-class="flex items-center gap-4 cursor-pointer" input-class="hidden checkboxInput" icon-class="w-3 h-3 flex opacity-0" decorator-class="bg-white p-1 shrink-0 rounded-[5px] flex items-center justify-center w-5 h-5 checkboxIcon" label="Согласие на обработку персональных данных"/>                
+            <FormKit type="submit" input-class="uppercase text-lg text-white bg-[#869D8B] rounded-[20px] w-full py-5 font-bold">Оставить заявку</FormKit>
+        </FormKit>
+    </div>
 </template>
 
 <script setup>
-    /* список вопросов */    
-
+    /* список вопросов */  
     const FAQs = [
         {
             question: "Какие преимущества для моего ребенка может принести занятие ",
@@ -287,4 +302,24 @@
             answer: "Родители могут помочь своему ребенку, поддерживая его в ежедневных практиках, обсуждая его эмоции и проблемы, а также осознавая свои отношения и коммуникацию со своим ребенком."
         }
     ]
+
+    /* показ формы и создание полей */
+    const isServicesFormShow = ref(false)
+    const servicesForm = ref({
+        name: "",
+        phone: "",
+        email: "",
+        service: ""
+    })
+
+    /* выбор услуги */
+    const selectService = (service) => {
+        servicesForm.value.service = service
+    }
 </script>
+
+<style>
+    select ~ .formkit-select-icon {
+        display: none;
+    }
+</style>
