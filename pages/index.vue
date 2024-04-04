@@ -37,27 +37,27 @@
     <div class="flex flex-col gap-7 xl:gap-7">
         <div class="flex max-lg:flex-col lg:items-center lg:justify-between gap-7">
             <p class="Goma text-2xl xl:text-3xl lg:w-3/5 break-words"><span class="text-[#E9556D]">Дополнительные</span> образовательные услуги</p>
-            <NuxtLink to="/" class="flex items-center gap-4 text-sm md:text-base xl:text-lg">
+            <NuxtLink to="/services" class="flex items-center gap-4 text-sm md:text-base xl:text-lg">
                 <span>Перейти ко всем услугам</span>
                 <img src="/images/services/arrow.png" alt="">
             </NuxtLink>
         </div>
-        <div class="flex max-md:flex-col gap-4 md:gap-7 xl:gap-10">
-            <div class="flex max-lg:flex-col gap-7 px-5 md:px-7 xl:px-9 py-10 lg:py-9 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#FED3DA]">
+        <div class="flex max-lg:flex-col gap-4 md:gap-7 xl:gap-10">
+            <div class="flex flex-col gap-7 px-5 md:px-7 xl:px-9 py-10 lg:py-9 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#FED3DA] lg:w-1/2">
                 <div class="flex flex-col gap-7 xl:gap-8 lg:py-10 xl:py-14 lg:w-[65%] lg:grow">
-                    <p class="text-xl md:text-2xl xl:text-4xl font-bold">Дополнительные образовательные услуги</p>
-                    <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
-                    <button class="bg-white text-[#E9556D] text-lg font-bold py-4 text-center max-md:w-full md:px-14 rounded-[15px] xl:rounded-[20px] lg:mt-auto">Узнать подробнее</button>
+                    <p class="text-xl md:text-2xl xl:text-4xl font-bold">Детская гимнастика</p>
+                    <p class="text-sm md:text-base xl:text-lg">Улучшение сосредоточенности: гимнастика требует концентрации внимания, умения слушать инструктора и выполнять задания.</p>
+                    <NuxtLink to="/services" class="bg-white text-[#E9556D] text-lg font-bold py-4 text-center max-md:w-full md:px-14 rounded-[15px] xl:rounded-[20px] lg:mt-auto">Узнать подробнее</NuxtLink>
                 </div>
-                <img src="/images/services/1.png" alt="" class="rounded-[15px] md:rounded-[25px] xl:rounded-[40px] lg:w-[35%] max-lg:aspect-video max-lg:object-cover max-lg:object-center">
+                <img src="/images/services/gymnastic1.png" alt="" class="rounded-[15px] md:rounded-[25px] xl:rounded-[40px] aspect-video object-cover object-center">
             </div>
-            <div class="flex max-lg:flex-col gap-7 px-5 md:px-7 xl:px-9 py-10 lg:py-9 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#D4E4DA]">
+            <div class="flex flex-col gap-7 px-5 md:px-7 xl:px-9 py-10 lg:py-9 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#D4E4DA] lg:w-1/2">
                 <div class="flex flex-col gap-7 xl:gap-8 lg:py-10 xl:py-14 lg:w-[65%] lg:grow">
-                    <p class="text-xl md:text-2xl xl:text-4xl font-bold">Дополнительные образовательные услуги</p>
-                    <p class="text-sm md:text-base xl:text-lg">8 сентября мы отмечаем свой сказочный день рождения. Спасибо всем, кто разделил с нами этот праздник.</p>
-                    <button class="bg-white text-[#7BA58A] text-lg font-bold py-4 text-center max-md:w-full md:px-14 rounded-[15px] xl:rounded-[20px] lg:mt-auto">Узнать подробнее</button>
+                    <p class="text-xl md:text-2xl xl:text-4xl font-bold">Психолог</p>
+                    <p class="text-sm md:text-base xl:text-lg">Развитие эмоционального интеллекта: занятия с психологом помогают детям развивать навыки работы с эмоциями, улучшают их эмоциональное состояние и психическое благополучие.</p>
+                    <NuxtLink to="/services" class="bg-white text-[#7BA58A] text-lg font-bold py-4 text-center max-md:w-full md:px-14 rounded-[15px] xl:rounded-[20px] lg:mt-auto">Узнать подробнее</NuxtLink>
                 </div>
-                <img src="/images/services/2.png" alt="" class="rounded-[15px] md:rounded-[25px] xl:rounded-[40px] lg:w-[35%] max-lg:aspect-video max-lg:object-cover max-lg:object-center">
+                <img src="/images/services/psych1.jpeg" alt="" class="rounded-[15px] md:rounded-[25px] xl:rounded-[40px] aspect-video object-cover object-center">
             </div>
         </div>
     </div>

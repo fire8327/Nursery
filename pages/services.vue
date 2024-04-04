@@ -39,6 +39,10 @@
                     <p><span class="text-[#B89574] font-semibold">Социализация:</span> в групповых занятиях дети учатся работать в команде, сотрудничать и общаться друг с другом.</p>
                 </div>
             </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/gymnastic1.png" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/gymnastic2.png" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
+            </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
@@ -70,6 +74,10 @@
                     <p class="rounded-full w-11 h-11 bg-[#869D8B] text-white flex items-center justify-center shrink-0">5</p>
                     <p><span class="text-[#869D8B] font-semibold">Усиление взаимодействия со своими соучениками:</span> занятия йогой в группе способствуют развитию социальных навыков, сотрудничеству и взаимодействию.</p>
                 </div>
+            </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/yoga1.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/yoga2.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
             </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
@@ -103,6 +111,10 @@
                     <p><span class="text-[#E9556D] font-semibold">Подготовка к успеху в школе:</span> занятия математикой помогают детям развивать навыки, необходимые для успешного обучения в школе.</p>
                 </div>
             </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/math1.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/math2.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
+            </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
@@ -134,6 +146,10 @@
                     <p class="rounded-full w-11 h-11 bg-[#B89574] text-white flex items-center justify-center shrink-0">5</p>
                     <p><span class="text-[#B89574] font-semibold">Развитие слухового и пространственного восприятия:</span> занятия способствуют развитию способности слышать и анализировать звуки, а также пониманию пространственных отношений.</p>
                 </div>
+            </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/speech1.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/speech2.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
             </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
@@ -167,6 +183,10 @@
                     <p><span class="text-[#869D8B] font-semibold">Развитие эстетического восприятия:</span> занятия помогают детям улучшать свое эстетическое восприятие и развивать чувство красоты.</p>
                 </div>
             </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/draw1.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/draw2.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
+            </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
                     <span class="font-semibold">Время занятий:</span> 1 час. <br>
@@ -199,6 +219,10 @@
                     <p><span class="text-[#E9556D] font-semibold">Повышение самооценки:</span> занятия с логопедом помогают детям преодолевать проблемы речи, что ведет к повышению их самооценки и уверенности.</p>
                 </div>
             </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/logoped1.jpeg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/logoped2.jpg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
+            </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
                     <span class="font-semibold">Время занятий:</span> 45 минут. <br>
@@ -230,6 +254,10 @@
                     <p class="rounded-full w-11 h-11 bg-[#B89574] text-white flex items-center justify-center shrink-0">5</p>
                     <p><span class="text-[#B89574] font-semibold">Улучшение умения управлять своими эмоциями:</span> занятия способствуют развитию навыков управления эмоциями и стрессовыми ситуациями.</p>
                 </div>
+            </div>
+            <div class="flex items-center gap-4 xl:gap-7 max-lg:flex-col">
+                <img src="/images/services/psych1.jpeg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">
+                <img src="/images/services/psych2.jpeg" alt="" class="lg:w-1/2 rounded-[30px] object-cover aspect-video">   
             </div>
             <div class="flex max-md:flex-col md:items-center md:justify-between gap-7">
                 <p>
