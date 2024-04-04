@@ -277,7 +277,7 @@
     <Feedback></Feedback>
     <Contacts></Contacts>
     <div class="fixed w-full h-screen bg-black/30 top-0 left-0 z-[5] flex items-center justify-center px-[15px] sm:px-[20px]" :class="{'hidden' : !isServicesFormShow}">
-        <FormKit type="form" form-class="flex flex-col gap-5 w-full max-w-[430px] px-5 py-7 relative bg-[#D4E4DA] z-[1] rounded-[30px]" :actions="false">
+        <FormKit @submit="serviceFeedback" type="form" form-class="flex flex-col gap-5 w-full max-w-[430px] px-5 py-7 relative bg-[#D4E4DA] z-[1] rounded-[30px]" :actions="false">
             <button type="button" @click="isServicesFormShow = false" class="absolute top-7 right-5 xl:right-7">
                 <img src="/images/feedback/close.png" alt="" class="w-5 h-5">
             </button>
@@ -292,6 +292,10 @@
             <FormKit type="submit" input-class="uppercase text-lg text-white bg-[#869D8B] rounded-[20px] w-full py-5 font-bold">Записаться</FormKit>
         </FormKit>
     </div>
+    <button type="button" @click="message.title = null" class="flex items-center gap-4 px-6 py-2 rounded-2xl w-fit text-white fixed top-10 right-10 z-[11] cursor-pointer" :class="message.type ? 'bg-[#869D8B]' : 'bg-[#E9556D]'" v-if="message.title">
+        <span>{{message.title}}</span>
+        <img src="/images/feedback/close.png" alt="" class="w-3.5 h-3.5">
+    </button>	
 </template>
 
 <script setup>
@@ -308,9 +312,46 @@
         service: ""
     })
 
+    let message = ref({
+        title: null, 
+        type: true
+    })
+
     /* выбор услуги */
     const selectService = (service) => {
         servicesForm.value.service = service
+    }
+
+    /* отправка данных */
+    const token = "6958853172:AAFXlcvSqaeM4x4jiApDSxGMKF0uW8JUaWY"
+    const chatId = "-4178180856"
+    const URL = `https://api.telegram.org/bot${token}/sendMessage`    
+
+    const serviceFeedback = async() =>{
+        let msg = "<b>Заявка на дополнительную услугу</b>\n"
+        + `<b>Имя:</b> ${servicesForm.value.name}\n`
+        + `<b>Телефон:</b> ${servicesForm.value.phone}\n`
+        + `<b>Emаil:</b> ${servicesForm.value.email}\n`
+        + `<b>Услуга:</b> ${servicesForm.value.service}\n`
+        const {data, error} = await useFetch(URL,{
+            body:{
+                'chat_id': chatId,
+                'parse_mode': 'html',
+                'text': msg
+            },
+            method:'post'
+        })
+
+        if (error.value) return message.value.title = 'При отправке произошла ошибка!', message.value.type = false
+        message.value.title = 'Успешная отправка!', message.value.type = true 
+        servicesForm.value.name = ""
+        servicesForm.value.phone = ""
+        servicesForm.value.email = ""
+        servicesForm.value.service = ""
+        isServicesFormShow.value = false
+        setTimeout(() => {
+            message.value.title = null
+        }, 3000);
     }
 </script>
 
