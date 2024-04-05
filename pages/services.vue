@@ -268,7 +268,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col gap-7 xl:gap-7">
+    <div class="flex flex-col gap-7 xl:gap-10">
         <p class="Goma text-2xl xl:text-3xl">Вопрос-ответ</p>
         <div class="flex flex-col gap-4 xl:gap-5">
             <Question v-for="FAQ in FAQs" v-bind="FAQ"></Question>
