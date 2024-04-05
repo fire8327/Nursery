@@ -29,11 +29,11 @@
             <div class="w-full lg:w-[65%] lg:h-full flex flex-col gap-7 md:gap-14 xl:gap-20 py-10 xl:py-12 px-10 md:px-12 xl:px-16 items-center text-center bg-[#D4E4DA] rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
                 <p class="text-lg md:text-xl xl:text-2xl Goma">Длительность дня</p>
                 <div class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-7 gap-5 xl:gap-6 font-bold text-2xl">
-                    <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">пн</button>
-                    <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">вт</button>
-                    <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">ср</button>
-                    <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">чт</button>
-                    <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">пт</button>
+                    <button @click="filterDishes('пн')" class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">пн</button>
+                    <button @click="filterDishes('вт')" class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">вт</button>
+                    <button @click="filterDishes('ср')" class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">ср</button>
+                    <button @click="filterDishes('чт')" class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">чт</button>
+                    <button @click="filterDishes('пт')" class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] flex items-center justify-center">пт</button>
                     <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] bg-[#869D8B] text-white flex items-center justify-center">сб</button>
                     <button class="w-20 h-20 rounded-[20px] border-[3px] border-[#869D8B] bg-[#869D8B] text-white flex items-center justify-center">вс</button>
                 </div>
@@ -41,44 +41,44 @@
         </div>
         <div class="flex flex-col gap-10 px-5 md:px-10 xl:px-16 py-10 md:py-12 xl:py-16 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#D4E4DA]">
             <p class="text-2xl md:text-3xl xl:text-4xl Goma px-5 md:px-8 xl:px-10">Пример одного дня</p>
-            <div class="flex flex-col gap-14 md:gap-20 xl:gap-24 w-full">
-                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+            <div class="flex flex-col gap-4 md:gap-8 xl:gap-14 w-full">
+                <div class="flex flex-col gap-2 xl:gap-4 text-lg md:text-xl xl:text-2xl">
                     <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Завтрак</p>
-                    <div class="flex flex-col gap-7 xl:gap-9">
+                    <div class="flex flex-col gap-2 xl:gap-4" v-for="breakfast in foods[0].breakfast">
                         <div class="w-full h-px bg-[#869D8B]"></div>
-                        <div class="flex items-center justify-between">
-                            <p>Хлеб</p>
-                            <p>20г</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <p>{{ breakfast.dish }}</p>
+                            <p>{{ breakfast.gram }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                <div class="flex flex-col gap-2 xl:gap-4 text-lg md:text-xl xl:text-2xl">
                     <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Завтрак 2</p>
-                    <div class="flex flex-col gap-7 xl:gap-9">
+                    <div class="flex flex-col gap-2 xl:gap-4" v-for="breakfast2 in foods[0].breakfast2">
                         <div class="w-full h-px bg-[#869D8B]"></div>
-                        <div class="flex items-center justify-between">
-                            <p>Хлеб</p>
-                            <p>20г</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <p>{{ breakfast2.dish }}</p>
+                            <p>{{ breakfast2.gram }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                <div class="flex flex-col gap-2 xl:gap-4 text-lg md:text-xl xl:text-2xl">
                     <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Обед</p>
-                    <div class="flex flex-col gap-7 xl:gap-9">
+                    <div class="flex flex-col gap-2 xl:gap-4" v-for="dinner in foods[0].dinner">
                         <div class="w-full h-px bg-[#869D8B]"></div>
-                        <div class="flex items-center justify-between">
-                            <p>Хлеб</p>
-                            <p>20г</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <p>{{ dinner.dish }}</p>
+                            <p>{{ dinner.gram }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 xl:gap-9 text-lg md:text-xl xl:text-2xl">
+                <div class="flex flex-col gap-2 xl:gap-4 text-lg md:text-xl xl:text-2xl">
                     <p class="font-bold text-[#869D8B] px-5 md:px-8 xl:px-10">Уплотненный полдник</p>
-                    <div class="flex flex-col gap-7 xl:gap-9">
+                    <div class="flex flex-col gap-2 xl:gap-4" v-for="afternoon in foods[0].afternoon">
                         <div class="w-full h-px bg-[#869D8B]"></div>
-                        <div class="flex items-center justify-between">
-                            <p>Хлеб</p>
-                            <p>20г</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <p>{{ afternoon.dish }}</p>
+                            <p>{{ afternoon.gram }}</p>
                         </div>
                     </div>
                 </div>
@@ -88,5 +88,18 @@
 </template>
 
 <script setup>
+    /* получение  данных о питании */
+    const supabase = useSupabaseClient() 
+    const { data:nutrition, error:errorNutrition } = await supabase.from('nutrition').select('*')
+    const foods = ref()
+    foods.value = nutrition.filter(el => {
+        return el.day == "пн"
+    })
 
+    /* фильтрация по дням */
+    const filterDishes = (dish) => {
+        foods.value = nutrition.filter(el => {
+            return el.day == `${dish}`
+        })
+    }
 </script>
