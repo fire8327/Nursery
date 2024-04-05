@@ -85,6 +85,14 @@
             </div>
         </div>
     </div>
+    <div class="flex flex-col gap-7 xl:gap-7">
+        <p class="Goma text-2xl xl:text-3xl">Вопрос-ответ</p>
+        <div class="flex flex-col gap-4 xl:gap-5">
+            <Question v-for="FAQ in FAQs" v-bind="FAQ"></Question>
+        </div>
+    </div>
+    <Feedback></Feedback>
+    <Contacts></Contacts>
 </template>
 
 <script setup>
@@ -102,4 +110,7 @@
             return el.day == `${dish}`
         })
     }
+
+    /* список вопросов */
+    const { data:FAQs, error:errorFAQs } = await supabase.from('FAQ').select('*').eq('page', '3')
 </script>
