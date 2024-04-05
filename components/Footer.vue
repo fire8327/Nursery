@@ -10,8 +10,8 @@
                 <NuxtLink to="/news">Объявления и Новости</NuxtLink>
                 <NuxtLink to="/services">Доп. услуги</NuxtLink>
                 <NuxtLink to="/nutrition">Питание</NuxtLink>
-                <NuxtLink to="/">Наши успехи</NuxtLink>  
-                <NuxtLink to="/">Админ панель</NuxtLink>  
+                <NuxtLink to="/advance">Наши успехи</NuxtLink>  
+                <NuxtLink to="/admin">Админ панель</NuxtLink>  
             </div>
             <div class="w-full h-px bg-[#EEF0F3]"></div>
             <p class="text-sm md:text-lg xl:text-xl font-medium text-center">© 2024. Детский сад №348 Советского района Волгограда</p>

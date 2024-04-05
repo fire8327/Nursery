@@ -11,7 +11,7 @@
                     <NuxtLink to="/news" class="max-xl:w-full max-xl:px-5 headerLink">Объявления и Новости</NuxtLink>
                     <NuxtLink to="/services" class="max-xl:w-full max-xl:px-5 headerLink">Доп. услуги</NuxtLink>
                     <NuxtLink to="/nutrition" class="max-xl:w-full max-xl:px-5 headerLink">Питание</NuxtLink>
-                    <NuxtLink to="/a" class="max-xl:w-full max-xl:px-5 headerLink">Наши успехи</NuxtLink>
+                    <NuxtLink to="/advance" class="max-xl:w-full max-xl:px-5 headerLink">Наши успехи</NuxtLink>
                 </nav>
                 <div class="flex items-center gap-2.5 md:gap-3 xl:gap-5">
                     <NuxtLink to="tel:+7(8442)41-81-55">
