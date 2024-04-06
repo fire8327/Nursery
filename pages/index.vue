@@ -17,23 +17,26 @@
         </div>
         <img src="/images/hero/welcome.png" alt="" class="lg:w-[52%] rounded-[30px] md:rounded-[45px] xl:rounded-[60px]">
     </div>
-    <Swiper :space-between="20" :loop="true" :modules="[SwiperPagination, SwiperAutoplay]" :pagination="{clickable: true}" :autoplay="{delay: 3500}"       
-        :breakpoints="
-        {
-            320: {
-                'slidesPerView': 1
-            },
-            768: {
-                'slidesPerView': 2
-            },
-            1024: {
-                'slidesPerView': 3
-            }
-        }" class="w-full">
-        <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] overflow-hidden" v-for="slide in slides">
-            <img :src="slide.img" alt="">
-        </SwiperSlide>
-    </Swiper>
+    <div class="flex flex-col gap-7 xl:gap-10">
+        <p class="Goma text-2xl xl:text-3xl lg:w-[687px] text-[#E9556D]">У нас своя веселая атмосфера</p>
+        <Swiper :space-between="20" :loop="true" :modules="[SwiperAutoplay]" :autoplay="{delay: 3500}"       
+            :breakpoints="
+            {
+                320: {
+                    'slidesPerView': 1
+                },
+                768: {
+                    'slidesPerView': 2
+                },
+                1024: {
+                    'slidesPerView': 3
+                }
+            }" class="w-full">
+            <SwiperSlide class="rounded-[30px] md:rounded-[45px] xl:rounded-[60px] border overflow-hidden" v-for="slide in slides">
+                <img :src="slide.img" alt="" class="object-cover aspect-square">
+            </SwiperSlide>
+        </Swiper>
+    </div>  
     <div class="flex flex-col gap-7 xl:gap-7">
         <div class="flex max-lg:flex-col lg:items-center lg:justify-between gap-7">
             <p class="Goma text-2xl xl:text-3xl lg:w-3/5 break-words"><span class="text-[#E9556D]">Дополнительные</span> образовательные услуги</p>
