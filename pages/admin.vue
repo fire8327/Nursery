@@ -68,7 +68,7 @@
 
     /* проверка */
     const loginAdmin = () => {
-        if (adminForm.value.login == "admin" && adminForm.value.password == "admin") {
+        if (adminForm.value.login == "admin" && adminForm.value.password == "sNGP56Cm2tv9BU!") {
             isAdminShow.value = true
             message.value.title = 'Успешный вход!', message.value.type = true 
             setTimeout(() => {
