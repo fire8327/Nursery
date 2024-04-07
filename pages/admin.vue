@@ -54,7 +54,7 @@
 
 <script setup>
     /* показ формы */
-    const isAdminShow = ref(true)
+    const isAdminShow = ref(false)
 
     /* данные для входа и оповещение */
     const adminForm = ref({
