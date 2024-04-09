@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center max-lg:flex-col gap-7 md:gap-10 xl:gap-20 px-5 md:px-8 xl:px-16 py-10 xl:py-16 rounded-[30px] md:rounded-[45px] xl:rounded-[60px] bg-[#D4E4DA]">
         <div class="flex flex-col gap-2 lg:hidden">
-            <p class="Goma text-[#869D8B] text-2xl">Узнать больше о наших садах</p>
+            <p class="Goma text-[#869D8B] text-2xl">Узнать больше о нашем саде</p>
             <p class="text-lg">Оставьте заявку и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
         </div>
         <img src="/images/feedback/main.png" alt="" class="rounded-[30px] lg:w-2/5">

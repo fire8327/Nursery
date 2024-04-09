@@ -1,14 +1,14 @@
 <template>
     <div class="flex flex-col gap-7 xl:gap-10">
         <div class="flex flex-col gap-5 max-lg:items-center max-lg:text-center">
-            <div class="flex items-center gap-1">
+            <div>
                 <NuxtLink to="/">Главная</NuxtLink>
-                <p>/</p>
+                /
                 <NuxtLink to="/news">Объявления и Новости</NuxtLink>
-                <p>/</p>
-                <p>{{ card[0].title }}</p>
+                /
+                {{ card[0].title }}
             </div>
-            <p class="text-4xl md:text-5xl xl:text-6xl Goma text-[#869D8B]">{{ card[0].title }}</p>   
+            <p class="text-2xl md:text-4xl xl:text-6xl Goma text-[#869D8B] break-words">{{ card[0].title }}</p>   
         </div>
         <p class="text-sm md:text-base xl:text-lg">{{ card[0].desc }}</p>
         <img :src="card[0].img" alt="" class="rounded-xl">
