@@ -7,7 +7,7 @@
         <img src="/images/feedback/main.png" alt="" class="rounded-[30px] lg:w-2/5">
         <FormKit @submit="feedback" type="form" form-class="flex flex-col gap-7" :actions="false">
             <div class="flex flex-col gap-5 max-lg:hidden">
-                <p class="Goma text-[#869D8B] text-2xl">Узнать больше о наших садах</p>
+                <p class="Goma text-[#869D8B] text-2xl">Узнать больше о нашем саде</p>
                 <p class="text-lg">Оставьте заявку и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
             </div>
             <div class="flex flex-col gap-6 xl:gap-4">
