@@ -56,6 +56,12 @@
     /* открытие мобильного меню */
     const isMenuShow = ref(false)
 
+    /* закрытие мобильного меню */
+    const nuxtApp = useNuxtApp()
+    nuxtApp.hook('page:start', () => {
+        isMenuShow.value = false
+    })
+
     /* открытие формы обратной связи */
     const isFormShow = ref(false)
 
