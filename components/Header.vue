@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full fixed top-0 left-0 bg-white transition-all duration-500" :class="{'-translate-y-full' : isScrollDown}">        
+    <header class="w-full fixed top-0 left-0 bg-white transition-all duration-500 z-[12]" :class="{'-translate-y-full' : isScrollDown}">        
         <div class="w-full grid-container font-Nunito relative py-6 md:py-8 xl:py-10">
             <div class="flex items-center justify-between gap-6">
                 <NuxtLink to="/" class="flex flex-col text-[#869D8B] Goma items-center">
