@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@formkit/nuxt",
     "@nuxtjs/supabase",
-    "nuxt-swiper"
+    "nuxt-swiper",
+    "@vueuse/nuxt"
   ],
   googleFonts: {
     families: {
